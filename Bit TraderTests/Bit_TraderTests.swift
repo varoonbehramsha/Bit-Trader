@@ -24,6 +24,41 @@ class Bit_TraderTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+	func testTickerAPI()
+	{
+		let expectation = self.expectation(description: "Ticker API returns valid response")
+		let networkManager = NetworkManager<BlockchainAPI>()
+		networkManager.router.request(.ticker) { (data, response, error) in
+			if error == nil
+			{
+				guard data != nil else
+				{
+					XCTFail("Data missing")
+					expectation.fulfill()
+					return
+				}
+				
+				do
+				{
+					let responseJSON = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+					print(responseJSON)
+					expectation.fulfill()
+				}
+				catch{
+					XCTFail("Failed to make JSON object from response data")
+					expectation.fulfill()
+				}
+			}else
+			{
+				XCTFail("API failed")
+				expectation.fulfill()
+			}
+		}
+		
+		waitForExpectations(timeout: 5, handler: nil)
+		
+	}
+	
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
