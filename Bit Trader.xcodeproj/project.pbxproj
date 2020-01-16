@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C02319B023D12021001AC223 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319AF23D12021001AC223 /* AppDelegate.swift */; };
+		C02319B223D12021001AC223 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319B123D12021001AC223 /* ViewController.swift */; };
+		C02319B523D12021001AC223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02319B323D12021001AC223 /* Main.storyboard */; };
+		C02319B723D12023001AC223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02319B623D12023001AC223 /* Assets.xcassets */; };
+		C02319BA23D12023001AC223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02319B823D12023001AC223 /* LaunchScreen.storyboard */; };
+		C02319C523D12024001AC223 /* Bit_TraderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319C423D12024001AC223 /* Bit_TraderTests.swift */; };
+		C02319D023D12024001AC223 /* Bit_TraderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319CF23D12024001AC223 /* Bit_TraderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C02319C123D12024001AC223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C02319A423D12021001AC223 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C02319AB23D12021001AC223;
+			remoteInfo = "Bit Trader";
+		};
+		C02319CC23D12024001AC223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C02319A423D12021001AC223 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C02319AB23D12021001AC223;
+			remoteInfo = "Bit Trader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C02319AC23D12021001AC223 /* Bit Trader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bit Trader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02319AF23D12021001AC223 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C02319B123D12021001AC223 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C02319B423D12021001AC223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C02319B623D12023001AC223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C02319B923D12023001AC223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C02319BB23D12023001AC223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02319C023D12024001AC223 /* Bit TraderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bit TraderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02319C423D12024001AC223 /* Bit_TraderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit_TraderTests.swift; sourceTree = "<group>"; };
+		C02319C623D12024001AC223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02319CB23D12024001AC223 /* Bit TraderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bit TraderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02319CF23D12024001AC223 /* Bit_TraderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bit_TraderUITests.swift; sourceTree = "<group>"; };
+		C02319D123D12024001AC223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C02319A923D12021001AC223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02319BD23D12024001AC223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02319C823D12024001AC223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C02319A323D12021001AC223 = {
+			isa = PBXGroup;
+			children = (
+				C02319AE23D12021001AC223 /* Bit Trader */,
+				C02319C323D12024001AC223 /* Bit TraderTests */,
+				C02319CE23D12024001AC223 /* Bit TraderUITests */,
+				C02319AD23D12021001AC223 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C02319AD23D12021001AC223 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C02319AC23D12021001AC223 /* Bit Trader.app */,
+				C02319C023D12024001AC223 /* Bit TraderTests.xctest */,
+				C02319CB23D12024001AC223 /* Bit TraderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C02319AE23D12021001AC223 /* Bit Trader */ = {
+			isa = PBXGroup;
+			children = (
+				C02319AF23D12021001AC223 /* AppDelegate.swift */,
+				C02319B123D12021001AC223 /* ViewController.swift */,
+				C02319B323D12021001AC223 /* Main.storyboard */,
+				C02319B623D12023001AC223 /* Assets.xcassets */,
+				C02319B823D12023001AC223 /* LaunchScreen.storyboard */,
+				C02319BB23D12023001AC223 /* Info.plist */,
+			);
+			path = "Bit Trader";
+			sourceTree = "<group>";
+		};
+		C02319C323D12024001AC223 /* Bit TraderTests */ = {
+			isa = PBXGroup;
+			children = (
+				C02319C423D12024001AC223 /* Bit_TraderTests.swift */,
+				C02319C623D12024001AC223 /* Info.plist */,
+			);
+			path = "Bit TraderTests";
+			sourceTree = "<group>";
+		};
+		C02319CE23D12024001AC223 /* Bit TraderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C02319CF23D12024001AC223 /* Bit_TraderUITests.swift */,
+				C02319D123D12024001AC223 /* Info.plist */,
+			);
+			path = "Bit TraderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C02319AB23D12021001AC223 /* Bit Trader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C02319D423D12024001AC223 /* Build configuration list for PBXNativeTarget "Bit Trader" */;
+			buildPhases = (
+				C02319A823D12021001AC223 /* Sources */,
+				C02319A923D12021001AC223 /* Frameworks */,
+				C02319AA23D12021001AC223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bit Trader";
+			productName = "Bit Trader";
+			productReference = C02319AC23D12021001AC223 /* Bit Trader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C02319BF23D12024001AC223 /* Bit TraderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C02319D723D12024001AC223 /* Build configuration list for PBXNativeTarget "Bit TraderTests" */;
+			buildPhases = (
+				C02319BC23D12024001AC223 /* Sources */,
+				C02319BD23D12024001AC223 /* Frameworks */,
+				C02319BE23D12024001AC223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C02319C223D12024001AC223 /* PBXTargetDependency */,
+			);
+			name = "Bit TraderTests";
+			productName = "Bit TraderTests";
+			productReference = C02319C023D12024001AC223 /* Bit TraderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C02319CA23D12024001AC223 /* Bit TraderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C02319DA23D12024001AC223 /* Build configuration list for PBXNativeTarget "Bit TraderUITests" */;
+			buildPhases = (
+				C02319C723D12024001AC223 /* Sources */,
+				C02319C823D12024001AC223 /* Frameworks */,
+				C02319C923D12024001AC223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C02319CD23D12024001AC223 /* PBXTargetDependency */,
+			);
+			name = "Bit TraderUITests";
+			productName = "Bit TraderUITests";
+			productReference = C02319CB23D12024001AC223 /* Bit TraderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C02319A423D12021001AC223 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Varoon Behramsha";
+				TargetAttributes = {
+					C02319AB23D12021001AC223 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					C02319BF23D12024001AC223 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = C02319AB23D12021001AC223;
+					};
+					C02319CA23D12024001AC223 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = C02319AB23D12021001AC223;
+					};
+				};
+			};
+			buildConfigurationList = C02319A723D12021001AC223 /* Build configuration list for PBXProject "Bit Trader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C02319A323D12021001AC223;
+			productRefGroup = C02319AD23D12021001AC223 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C02319AB23D12021001AC223 /* Bit Trader */,
+				C02319BF23D12024001AC223 /* Bit TraderTests */,
+				C02319CA23D12024001AC223 /* Bit TraderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C02319AA23D12021001AC223 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02319BA23D12023001AC223 /* LaunchScreen.storyboard in Resources */,
+				C02319B723D12023001AC223 /* Assets.xcassets in Resources */,
+				C02319B523D12021001AC223 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02319BE23D12024001AC223 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02319C923D12024001AC223 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C02319A823D12021001AC223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02319B223D12021001AC223 /* ViewController.swift in Sources */,
+				C02319B023D12021001AC223 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02319BC23D12024001AC223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02319C523D12024001AC223 /* Bit_TraderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02319C723D12024001AC223 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02319D023D12024001AC223 /* Bit_TraderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C02319C223D12024001AC223 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C02319AB23D12021001AC223 /* Bit Trader */;
+			targetProxy = C02319C123D12024001AC223 /* PBXContainerItemProxy */;
+		};
+		C02319CD23D12024001AC223 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C02319AB23D12021001AC223 /* Bit Trader */;
+			targetProxy = C02319CC23D12024001AC223 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C02319B323D12021001AC223 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C02319B423D12021001AC223 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C02319B823D12023001AC223 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C02319B923D12023001AC223 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C02319D223D12024001AC223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C02319D323D12024001AC223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C02319D523D12024001AC223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bit Trader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "VB.Bit-Trader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C02319D623D12024001AC223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bit Trader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "VB.Bit-Trader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C02319D823D12024001AC223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bit TraderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "VB.Bit-TraderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bit Trader.app/Bit Trader";
+			};
+			name = Debug;
+		};
+		C02319D923D12024001AC223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bit TraderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "VB.Bit-TraderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bit Trader.app/Bit Trader";
+			};
+			name = Release;
+		};
+		C02319DB23D12024001AC223 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bit TraderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "VB.Bit-TraderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bit Trader";
+			};
+			name = Debug;
+		};
+		C02319DC23D12024001AC223 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bit TraderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "VB.Bit-TraderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bit Trader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C02319A723D12021001AC223 /* Build configuration list for PBXProject "Bit Trader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02319D223D12024001AC223 /* Debug */,
+				C02319D323D12024001AC223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C02319D423D12024001AC223 /* Build configuration list for PBXNativeTarget "Bit Trader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02319D523D12024001AC223 /* Debug */,
+				C02319D623D12024001AC223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C02319D723D12024001AC223 /* Build configuration list for PBXNativeTarget "Bit TraderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02319D823D12024001AC223 /* Debug */,
+				C02319D923D12024001AC223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C02319DA23D12024001AC223 /* Build configuration list for PBXNativeTarget "Bit TraderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02319DB23D12024001AC223 /* Debug */,
+				C02319DC23D12024001AC223 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C02319A423D12021001AC223 /* Project object */;
+}
