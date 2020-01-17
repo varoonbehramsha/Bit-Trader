@@ -59,6 +59,37 @@ class Bit_TraderTests: XCTestCase {
 		
 	}
 	
+	func testGetBitcoinPrices()
+	{
+		let expectation = self.expectation(description: "getBitcoinPrices() returns valid data")
+
+		let networkManager = NetworkManager<BlockchainAPI>()
+		
+		let priceService = BTPriceService(networkManager: networkManager)
+		
+		priceService.getBitcoinPrices { (successful, statusMessage, bitcoinPrices) in
+			
+			guard successful else {
+		
+				XCTFail(statusMessage)
+				expectation.fulfill()
+				return
+			}
+			
+			if let prices = bitcoinPrices {
+			
+				print(prices)
+				expectation.fulfill()
+				
+			}else
+			{
+				XCTFail(statusMessage)
+				expectation.fulfill()
+			}
+		}
+		waitForExpectations(timeout: 5, handler: nil)
+	}
+	
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

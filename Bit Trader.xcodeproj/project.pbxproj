@@ -25,6 +25,9 @@
 		C02319F323D124B7001AC223 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319ED23D124B7001AC223 /* EndPointType.swift */; };
 		C02319F523D124D5001AC223 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319F423D124D5001AC223 /* NetworkManager.swift */; };
 		C02319F723D12582001AC223 /* BlockchainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319F623D12582001AC223 /* BlockchainAPI.swift */; };
+		C02319FA23D13245001AC223 /* BTPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319F923D13245001AC223 /* BTPrice.swift */; };
+		C02319FC23D13270001AC223 /* BTBitcoinPrices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319FB23D13270001AC223 /* BTBitcoinPrices.swift */; };
+		C02319FF23D133DB001AC223 /* BTPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319FE23D133DB001AC223 /* BTPriceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		C02319ED23D124B7001AC223 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		C02319F423D124D5001AC223 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C02319F623D12582001AC223 /* BlockchainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainAPI.swift; sourceTree = "<group>"; };
+		C02319F923D13245001AC223 /* BTPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTPrice.swift; sourceTree = "<group>"; };
+		C02319FB23D13270001AC223 /* BTBitcoinPrices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBitcoinPrices.swift; sourceTree = "<group>"; };
+		C02319FE23D133DB001AC223 /* BTPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTPriceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,8 @@
 		C02319AE23D12021001AC223 /* Bit Trader */ = {
 			isa = PBXGroup;
 			children = (
+				C02319FD23D133AF001AC223 /* Service */,
+				C02319F823D131D8001AC223 /* Model */,
 				C02319DD23D122A2001AC223 /* Network */,
 				C02319AF23D12021001AC223 /* AppDelegate.swift */,
 				C02319B123D12021001AC223 /* ViewController.swift */,
@@ -196,6 +204,23 @@
 				C02319F423D124D5001AC223 /* NetworkManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		C02319F823D131D8001AC223 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C02319F923D13245001AC223 /* BTPrice.swift */,
+				C02319FB23D13270001AC223 /* BTBitcoinPrices.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C02319FD23D133AF001AC223 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C02319FE23D133DB001AC223 /* BTPriceService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,9 +358,12 @@
 				C02319B223D12021001AC223 /* ViewController.swift in Sources */,
 				C02319F023D124B7001AC223 /* NetworkError.swift in Sources */,
 				C02319B023D12021001AC223 /* AppDelegate.swift in Sources */,
+				C02319FA23D13245001AC223 /* BTPrice.swift in Sources */,
 				C02319F123D124B7001AC223 /* HTTPTask.swift in Sources */,
 				C02319EE23D124B7001AC223 /* HTTPMethod.swift in Sources */,
+				C02319FC23D13270001AC223 /* BTBitcoinPrices.swift in Sources */,
 				C02319F323D124B7001AC223 /* EndPointType.swift in Sources */,
+				C02319FF23D133DB001AC223 /* BTPriceService.swift in Sources */,
 				C02319EF23D124B7001AC223 /* Router.swift in Sources */,
 				C02319E623D12449001AC223 /* ParameterEncoding.swift in Sources */,
 				C02319F223D124B7001AC223 /* NetworkRouter.swift in Sources */,
