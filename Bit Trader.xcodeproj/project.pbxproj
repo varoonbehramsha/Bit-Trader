@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C02319B023D12021001AC223 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319AF23D12021001AC223 /* AppDelegate.swift */; };
 		C02319B223D12021001AC223 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319B123D12021001AC223 /* ViewController.swift */; };
-		C02319B523D12021001AC223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02319B323D12021001AC223 /* Main.storyboard */; };
 		C02319B723D12023001AC223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02319B623D12023001AC223 /* Assets.xcassets */; };
 		C02319BA23D12023001AC223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02319B823D12023001AC223 /* LaunchScreen.storyboard */; };
 		C02319C523D12024001AC223 /* Bit_TraderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319C423D12024001AC223 /* Bit_TraderTests.swift */; };
@@ -28,6 +27,11 @@
 		C02319FA23D13245001AC223 /* BTPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319F923D13245001AC223 /* BTPrice.swift */; };
 		C02319FC23D13270001AC223 /* BTBitcoinPrices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319FB23D13270001AC223 /* BTBitcoinPrices.swift */; };
 		C02319FF23D133DB001AC223 /* BTPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319FE23D133DB001AC223 /* BTPriceService.swift */; };
+		C0231A0223D146ED001AC223 /* BTOrderTicket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0231A0123D146ED001AC223 /* BTOrderTicket.storyboard */; };
+		C0231A0523D16EDE001AC223 /* BTOrderTicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0231A0423D16EDE001AC223 /* BTOrderTicketVC.swift */; };
+		C0231A0823D170E3001AC223 /* BTOrderTicketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0231A0723D170E3001AC223 /* BTOrderTicketPresenter.swift */; };
+		C0231A0A23D2F17A001AC223 /* BTColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0231A0923D2F17A001AC223 /* BTColor.swift */; };
+		C0231A0C23D3276C001AC223 /* BTFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0231A0B23D3276C001AC223 /* BTFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +55,6 @@
 		C02319AC23D12021001AC223 /* Bit Trader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bit Trader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02319AF23D12021001AC223 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C02319B123D12021001AC223 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C02319B423D12021001AC223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C02319B623D12023001AC223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C02319B923D12023001AC223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C02319BB23D12023001AC223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +78,11 @@
 		C02319F923D13245001AC223 /* BTPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTPrice.swift; sourceTree = "<group>"; };
 		C02319FB23D13270001AC223 /* BTBitcoinPrices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBitcoinPrices.swift; sourceTree = "<group>"; };
 		C02319FE23D133DB001AC223 /* BTPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTPriceService.swift; sourceTree = "<group>"; };
+		C0231A0123D146ED001AC223 /* BTOrderTicket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BTOrderTicket.storyboard; sourceTree = "<group>"; };
+		C0231A0423D16EDE001AC223 /* BTOrderTicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTOrderTicketVC.swift; sourceTree = "<group>"; };
+		C0231A0723D170E3001AC223 /* BTOrderTicketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTOrderTicketPresenter.swift; sourceTree = "<group>"; };
+		C0231A0923D2F17A001AC223 /* BTColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTColor.swift; sourceTree = "<group>"; };
+		C0231A0B23D3276C001AC223 /* BTFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,12 +133,14 @@
 		C02319AE23D12021001AC223 /* Bit Trader */ = {
 			isa = PBXGroup;
 			children = (
+				C0231A0623D170C6001AC223 /* Presenter */,
+				C0231A0323D16E67001AC223 /* Controller */,
+				C0231A0023D14682001AC223 /* View */,
+				C02319AF23D12021001AC223 /* AppDelegate.swift */,
 				C02319FD23D133AF001AC223 /* Service */,
 				C02319F823D131D8001AC223 /* Model */,
 				C02319DD23D122A2001AC223 /* Network */,
-				C02319AF23D12021001AC223 /* AppDelegate.swift */,
 				C02319B123D12021001AC223 /* ViewController.swift */,
-				C02319B323D12021001AC223 /* Main.storyboard */,
 				C02319B623D12023001AC223 /* Assets.xcassets */,
 				C02319B823D12023001AC223 /* LaunchScreen.storyboard */,
 				C02319BB23D12023001AC223 /* Info.plist */,
@@ -211,6 +221,8 @@
 			children = (
 				C02319F923D13245001AC223 /* BTPrice.swift */,
 				C02319FB23D13270001AC223 /* BTBitcoinPrices.swift */,
+				C0231A0923D2F17A001AC223 /* BTColor.swift */,
+				C0231A0B23D3276C001AC223 /* BTFont.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +233,30 @@
 				C02319FE23D133DB001AC223 /* BTPriceService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		C0231A0023D14682001AC223 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0231A0123D146ED001AC223 /* BTOrderTicket.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0231A0323D16E67001AC223 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0231A0423D16EDE001AC223 /* BTOrderTicketVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0231A0623D170C6001AC223 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C0231A0723D170E3001AC223 /* BTOrderTicketPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,8 +364,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02319BA23D12023001AC223 /* LaunchScreen.storyboard in Resources */,
+				C0231A0223D146ED001AC223 /* BTOrderTicket.storyboard in Resources */,
 				C02319B723D12023001AC223 /* Assets.xcassets in Resources */,
-				C02319B523D12021001AC223 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,16 +394,20 @@
 				C02319B223D12021001AC223 /* ViewController.swift in Sources */,
 				C02319F023D124B7001AC223 /* NetworkError.swift in Sources */,
 				C02319B023D12021001AC223 /* AppDelegate.swift in Sources */,
+				C0231A0C23D3276C001AC223 /* BTFont.swift in Sources */,
 				C02319FA23D13245001AC223 /* BTPrice.swift in Sources */,
 				C02319F123D124B7001AC223 /* HTTPTask.swift in Sources */,
 				C02319EE23D124B7001AC223 /* HTTPMethod.swift in Sources */,
 				C02319FC23D13270001AC223 /* BTBitcoinPrices.swift in Sources */,
+				C0231A0523D16EDE001AC223 /* BTOrderTicketVC.swift in Sources */,
 				C02319F323D124B7001AC223 /* EndPointType.swift in Sources */,
 				C02319FF23D133DB001AC223 /* BTPriceService.swift in Sources */,
+				C0231A0823D170E3001AC223 /* BTOrderTicketPresenter.swift in Sources */,
 				C02319EF23D124B7001AC223 /* Router.swift in Sources */,
 				C02319E623D12449001AC223 /* ParameterEncoding.swift in Sources */,
 				C02319F223D124B7001AC223 /* NetworkRouter.swift in Sources */,
 				C02319E723D12449001AC223 /* URLParameterEncoder.swift in Sources */,
+				C0231A0A23D2F17A001AC223 /* BTColor.swift in Sources */,
 				C02319F723D12582001AC223 /* BlockchainAPI.swift in Sources */,
 				C02319E523D12449001AC223 /* JSONParameterEncoding.swift in Sources */,
 			);
@@ -405,14 +445,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C02319B323D12021001AC223 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C02319B423D12021001AC223 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C02319B823D12023001AC223 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
