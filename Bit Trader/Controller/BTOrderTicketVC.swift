@@ -192,6 +192,11 @@ extension BTOrderTicketVC : UITextFieldDelegate
 			return true
 		}
 		
+		if self.containsUnwantedCharacters(string: string)
+		{
+			return false
+		}
+		 
 		if textField.text!.split(separator: ".").count > 1
 		{
 			if textField.text!.split(separator: ".").last!.count < 2
@@ -217,4 +222,15 @@ extension BTOrderTicketVC : UITextFieldDelegate
 		textField.resignFirstResponder()
 		return true
 	}
+	
+	//MARK: - Helper Methods
+	func containsUnwantedCharacters(string:String) -> Bool
+	{
+		let allowedCharacters = "0123456789."
+		
+		return !string.contains(where: { (character) -> Bool in
+			allowedCharacters.contains(character)
+		})
+	}
+	
 }
