@@ -10,20 +10,25 @@ import UIKit
 
 class BTOrderTicketVC: UIViewController {
 
+	// Outlets
 	@IBOutlet weak var sellingPriceLabel: UILabel!
 	@IBOutlet weak var buyingPriceLabel: UILabel!
 	@IBOutlet weak var spreadLabel: UILabel!
 	@IBOutlet weak var unitsTextField: UITextField!
 	@IBOutlet weak var amountTextField: UITextField!
 	@IBOutlet weak var confirmButton: UIButton!
+	@IBOutlet weak var pricePanelStackView: UIStackView!
 	
+	// Properties
 	private var presenter:OrderTicketPresenterProtocol!
 	private var timer : Timer?
 	private var tagForLastUsedTextField = 0
 	
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
 
+		//Initial Setup
 		self.unitsTextField.delegate = self
 		self.amountTextField.delegate = self
 		self.unitsTextField.layer.borderColor = BTColor.textfieldBorder.cgColor
@@ -37,9 +42,10 @@ class BTOrderTicketVC: UIViewController {
 		let gestureRecogniser = UITapGestureRecognizer(target: self, action: #selector(hideKeypad))
 		self.view.addGestureRecognizer(gestureRecogniser)
 		
-        // Do any additional setup after loading the view.
+        // Setup presenter and load data
 		let priceService = BTPriceService(networkManager: NetworkManager<BlockchainAPI>())
 		self.presenter = BTOrderTicketPresenter(priceService: priceService)
+		
 		self.setupTimerToLoadData()
 		
     }
@@ -53,16 +59,18 @@ class BTOrderTicketVC: UIViewController {
 	
 	//MARK : - Helper Methods
 	
+	/// Creates a timer that reloads the data every 15 seconds
 	func setupTimerToLoadData()
 	{
-		self.timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { (timer) in
+		self.timer = Timer.scheduledTimer(withTimeInterval: 15, repeats: true, block: { (timer) in
 			self.presenter.loadData({ (successful, statusMessage) in
 				DispatchQueue.main.async {
 					if successful
 					{
-							self.setupUI()
+							self.updateUI()
 					}else
 					{
+						//Show Alert
 						let alertController = UIAlertController(title: "Error", message: statusMessage, preferredStyle: .alert)
 						alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
 						self.present(alertController, animated: true, completion: nil)
@@ -74,39 +82,34 @@ class BTOrderTicketVC: UIViewController {
 		self.timer?.fire()
 	}
 	
-	func setupUI()
+	/// Updates the UI with the latest data.
+	func updateUI()
 	{
 		
-		
-		self.sellingPriceLabel.attributedText = self.presenter.sellingPrice//self.presenter.sellingPriceLHS
+		self.sellingPriceLabel.attributedText = self.presenter.sellingPrice
 		self.buyingPriceLabel.attributedText = self.presenter.buyingPrice
 		self.spreadLabel.text = self.presenter.spread
 		
 
-		UIView.transition(with: self.sellingPriceLabel, duration: 0.3, options: UIView.AnimationOptions.transitionCrossDissolve, animations: {
+		UIView.transition(with: self.pricePanelStackView, duration: 2, options: UIView.AnimationOptions.transitionCrossDissolve, animations: {
 			self.sellingPriceLabel.textColor = UIColor.green
-			
-		}) { (completed) in
-			UIView.transition(with: self.sellingPriceLabel, duration: 1, options: UIView.AnimationOptions.transitionCrossDissolve, animations: {
-				self.sellingPriceLabel.textColor = UIColor.gray
-			}) { (completed) in
-				
-			}
-		}
-		UIView.transition(with: self.buyingPriceLabel, duration: 0.3, options: UIView.AnimationOptions.transitionCrossDissolve, animations: {
 			self.buyingPriceLabel.textColor = UIColor.green
-			
+
 		}) { (completed) in
-			UIView.transition(with: self.buyingPriceLabel, duration: 1, options: UIView.AnimationOptions.transitionCrossDissolve, animations: {
+			UIView.transition(with: self.pricePanelStackView, duration: 2, options: UIView.AnimationOptions.transitionCrossDissolve, animations: {
+				self.sellingPriceLabel.textColor = UIColor.gray
 				self.buyingPriceLabel.textColor = UIColor.gray
+
 			}) { (completed) in
 				
 			}
 		}
+
 		
 		self.updateUnitAndAmount()
 	}
 
+	/// Updates the state and UI of the confirm button based on the state of Units and Amount text fields.
 	func updateConfirmButtonUI()
 	{
 		if self.amountTextField.text!.isEmpty || self.unitsTextField.text!.isEmpty
@@ -120,18 +123,20 @@ class BTOrderTicketVC: UIViewController {
 		}
 	}
 	
+	/// Hides the keypad.
 	@objc func hideKeypad()
 	{
 		self.view.endEditing(true)
 	}
 	
+	/// Updates the values in Units and Amount text fields based on user input and latest price data.
 	func updateUnitAndAmount()
 	{
-		
 		
 		switch self.tagForLastUsedTextField {
 		case 0:
 			//Units Text Field
+			
 			//Update amount text field
 			guard !self.amountTextField.isFirstResponder else
 			{
@@ -149,6 +154,7 @@ class BTOrderTicketVC: UIViewController {
 			
 		case 1:
 			//Amount Text Field
+			
 			guard !self.unitsTextField.isFirstResponder else
 			{
 				//User is currently inputting values

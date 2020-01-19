@@ -19,11 +19,8 @@ class Bit_TraderTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
 
+	/// Tests if the BlockchainAPI endpoint returns valid data for the ticker API.
 	func testTickerAPI()
 	{
 		let expectation = self.expectation(description: "Ticker API returns valid response")
@@ -59,6 +56,7 @@ class Bit_TraderTests: XCTestCase {
 		
 	}
 	
+	/// Tests the getBitcoinPrices method in BTPriceService.
 	func testGetBitcoinPrices()
 	{
 		let expectation = self.expectation(description: "getBitcoinPrices() returns valid data")

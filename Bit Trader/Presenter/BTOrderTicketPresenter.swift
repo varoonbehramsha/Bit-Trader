@@ -27,15 +27,15 @@ class BTOrderTicketPresenter : OrderTicketPresenterProtocol
 	private var priceService : BTPriceService!
 	
 	private var numberFormatter : NumberFormatter
-	{
-		let numberFormatter = NumberFormatter()
-		numberFormatter.numberStyle = .decimal
-		numberFormatter.minimumFractionDigits = 2
-		return numberFormatter
-	}
+	
 	
 	var sellingPrice: NSAttributedString
 	{
+		guard self.price != nil else
+		{
+			return NSAttributedString()
+		}
+		
 		let number = NSNumber(floatLiteral: self.price!.sellingPrice)
 		let priceString = self.numberFormatter.string(from: number)!
 		let lhsAttributes = [NSAttributedString.Key.font:BTFont.pricePrimaryFont]
@@ -47,6 +47,11 @@ class BTOrderTicketPresenter : OrderTicketPresenterProtocol
 	
 	var buyingPrice: NSAttributedString
 	{
+		guard self.price != nil else
+		{
+			return NSAttributedString()
+		}
+		
 		let number = NSNumber(floatLiteral: self.price!.buyingPrice)
 		let priceString = self.numberFormatter.string(from: number)!
 		let lhsAttributes = [NSAttributedString.Key.font:BTFont.pricePrimaryFont]
@@ -60,22 +65,41 @@ class BTOrderTicketPresenter : OrderTicketPresenterProtocol
 	
 	var spread: String
 	{
+		guard self.price != nil else
+		{
+			return ""
+		}
+		
 		return "\(self.price!.buyingPrice - self.price!.sellingPrice)"
 	}
 	
 	init(priceService:BTPriceService) {
 		self.priceService = priceService
+		
+		//Initialise number formatter
+		let numberFormatter = NumberFormatter()
+		numberFormatter.numberStyle = .decimal
+		numberFormatter.minimumFractionDigits = 2
+		self.numberFormatter = numberFormatter
 	}
 	
-	func updatePrice(price: BTPrice) {
-		self.price = price
-	}
 	
 	func amountFor(units: Double) -> String {
+		
+		guard self.price != nil else
+		{
+			return ""
+		}
+		
 		return String(format: "%.2f",self.price!.buyingPrice * units)
 	}
 	
 	func unitsFor(amount: Double) -> String {
+		guard self.price != nil else
+		{
+			return ""
+		}
+		
 		return String(format: "%.2f", amount/self.price!.buyingPrice)
 	}
 	
@@ -85,8 +109,8 @@ class BTOrderTicketPresenter : OrderTicketPresenterProtocol
 			{
 				guard prices != nil else
 				{
-					return
 					completionHandler(false,"Prices are missing in response")
+					return
 				}
 				
 				self.price = prices!.gbp

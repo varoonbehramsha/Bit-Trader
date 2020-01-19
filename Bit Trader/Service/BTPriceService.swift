@@ -21,6 +21,9 @@ class BTPriceService : PriceService
 		self.networkManager = networkManager
 	}
 	
+	/// Get the prices for bitcoin in multiple currencies
+	///
+	/// - Parameter completionHandler: A block object called upon completion.
 	func getBitcoinPrices(_ completionHandler: @escaping (_ successful:Bool,_ statusMessage:String,_ prices:BTBitcoinPrices?)->())
 	{
 		self.networkManager.router.request(.ticker) { (data, response, error) in

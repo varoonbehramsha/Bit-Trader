@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C02319B023D12021001AC223 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319AF23D12021001AC223 /* AppDelegate.swift */; };
-		C02319B223D12021001AC223 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319B123D12021001AC223 /* ViewController.swift */; };
 		C02319B723D12023001AC223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02319B623D12023001AC223 /* Assets.xcassets */; };
 		C02319BA23D12023001AC223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02319B823D12023001AC223 /* LaunchScreen.storyboard */; };
 		C02319C523D12024001AC223 /* Bit_TraderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02319C423D12024001AC223 /* Bit_TraderTests.swift */; };
@@ -54,7 +53,6 @@
 /* Begin PBXFileReference section */
 		C02319AC23D12021001AC223 /* Bit Trader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bit Trader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02319AF23D12021001AC223 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C02319B123D12021001AC223 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C02319B623D12023001AC223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C02319B923D12023001AC223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C02319BB23D12023001AC223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				C02319FD23D133AF001AC223 /* Service */,
 				C02319F823D131D8001AC223 /* Model */,
 				C02319DD23D122A2001AC223 /* Network */,
-				C02319B123D12021001AC223 /* ViewController.swift */,
 				C02319B623D12023001AC223 /* Assets.xcassets */,
 				C02319B823D12023001AC223 /* LaunchScreen.storyboard */,
 				C02319BB23D12023001AC223 /* Info.plist */,
@@ -391,7 +388,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02319F523D124D5001AC223 /* NetworkManager.swift in Sources */,
-				C02319B223D12021001AC223 /* ViewController.swift in Sources */,
 				C02319F023D124B7001AC223 /* NetworkError.swift in Sources */,
 				C02319B023D12021001AC223 /* AppDelegate.swift in Sources */,
 				C0231A0C23D3276C001AC223 /* BTFont.swift in Sources */,

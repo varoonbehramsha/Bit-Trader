@@ -11,6 +11,6 @@ import UIKit
 
 struct BTFont
 {
-	static var pricePrimaryFont = UIFont(name: "HelveticaNeue", size: 25)!
+	static var pricePrimaryFont = UIFont(name: "HelveticaNeue", size: 27)!
 	static var priceSecondaryFont = UIFont(name: "HelveticaNeue", size: 22)!
 }
